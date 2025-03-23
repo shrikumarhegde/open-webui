@@ -4,7 +4,7 @@
 FROM --platform=$BUILDPLATFORM node:22-alpine3.20 AS build
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci --production
+RUN npm ci  # Remove --production to include devDependencies like @sveltejs/adapter-static
 COPY . .
 ENV APP_BUILD_HASH=dev-build
 RUN npm run build
