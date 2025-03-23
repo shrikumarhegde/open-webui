@@ -2,9 +2,7 @@ fastapi==0.115.7
 uvicorn[standard]==0.34.0
 pydantic==2.10.6
 python-multipart==0.0.18
-
 requests==2.32.3
 aiohttp==3.11.11
-
 loguru==0.7.2
 asgiref==3.8.1
